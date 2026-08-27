@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bonnie Zendesk Chat — demo</title>
+
+  <!-- Start of d3v-neoplesupport Zendesk Widget script -->
+  <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=270edec0-1711-4e16-85ca-7caf5529f0ef"> </script>
+  <!-- End of d3v-neoplesupport Zendesk Widget script -->
+
+  <style>
+    :root {
+      --bg: #fdf6f0;
+      --card: #ffffff;
+      --text: #2b2018;
+      --muted: #8a7a6d;
+      --accent: #e8590c;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: var(--card);
+      border-bottom: 1px solid #f0e4d8;
+      padding: 20px 32px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    header .badge {
+      font-size: 12px;
+      background: #fff1e6;
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-weight: 600;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(80, 40, 0, 0.08);
+      padding: 48px;
+      max-width: 560px;
+      text-align: center;
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      font-size: 28px;
+    }
+
+    .card p {
+      margin: 0 0 8px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .hint {
+      margin-top: 28px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .hint strong { color: var(--accent); }
+
+    .examples {
+      margin-top: 24px;
+      text-align: left;
+      background: #fdf6f0;
+      border-radius: 12px;
+      padding: 16px 20px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .examples span { display: block; padding: 3px 0; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎁 Cadeaubon.nl</h1>
+    <span class="badge">Bonnie chat-demo</span>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Hoi, wij zijn er voor je 👋</h2>
+      <p>Vragen over je cadeaukaart? Bonnie, onze digitale collega, helpt je direct in de chat.</p>
+      <p class="hint">Klik rechtsonder op de <strong>chat-knop</strong> om een gesprek met Bonnie te starten.</p>
+      <div class="examples">
+        <span>💳 &nbsp;"Wat is het saldo van mijn kaart?"</span>
+        <span>📦 &nbsp;"Ik heb mijn cadeaukaart nog niet ontvangen"</span>
+        <span>🛍️ &nbsp;"Waar kan ik mijn kaart inwisselen?"</span>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; giftcards.group — demo-omgeving (d3v-neoplesupport)
+  </footer>
+</body>
+</html>
